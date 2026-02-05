@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
 const envFound = dotenv.config();
 if (envFound.error) {
@@ -6,8 +6,8 @@ if (envFound.error) {
 }
 
 export default {
-  name: process.env.NAME || 'marbleimpact_api',
-  port: process.env.PORT || 3001,
+  name: process.env.NAME || "marbleimpact_api",
+  port: process.env.PORT || 5000,
   databaseURL: process.env.MONGODB_URI,
-  jwtSecretKey: process.env.JWT_SECRET_KEY || 'marble-impact-jwt-secret',
+  jwtSecretKey: process.env.JWT_SECRET_KEY || "marble-impact-jwt-secret",
 };
